@@ -20,22 +20,34 @@
   </head>
   <body class="bg-background">
     <!--Navbar-->
-    <div class="p-10 flex relative">
+    <div class="p-10 flex relative ">
       <!--Left Side-->
       <div class="flex items-center justify-center">
         <a href="index.html"
-          ><em><h2 class="text-3xl text-headline">Tiket<span class="judul">Nonton</span></h2></em></a
+          ><em
+            ><h2 class="ml-8 text-3xl text-headline">
+              Tiket<span class="judul">Nonton</span>
+            </h2></em
+          ></a
         >
         <ul class="list-none flex font-serif text-lg text-headline">
-          <a href="#home"><li class="ml-24 mr-8">Home</li></a>
-          <a href="#movies"><li class="mr-8">Movies</li></a>
-          <a href="#news"><li>News</li></a>
+          <a href="#home"
+            ><li class="ml-24 mr-8 hover:text-button transition duration-500">Home</li></a
+          >
+          <a href="#movies"
+            ><li class="mr-8 hover:text-button transition duration-500">Movies</li></a
+          >
+          <a href="#news "
+            ><li class="hover:text-button transition duration-500">News</li></a
+          >
         </ul>
       </div>
 
       <!--Right Side-->
       <div class="mb-3">
-        <div class="absolute mb-4 flex w-1/4 flex-wrap items-stretch right-10">
+        <div
+          class="absolute mb-4 flex w-1/4 flex-wrap items-stretch right-0 mr-20"
+        >
           <input
             type="search"
             class="relative m-0 -mr-0.5 block w-[1px] min-w-0 flex-auto rounded-l border border-solid border-neutral-300 bg-transparent bg-clip-padding px-3 py-[0.25rem] text-base font-normal leading-[1.6] text-neutral-700 outline-none transition duration-200 ease-in-out focus:z-[3] focus:border-primary focus:text-neutral-700 focus:shadow-[inset_0_0_0_1px_rgb(59,113,202)] focus:outline-none dark:border-neutral-600 dark:text-neutral-200 dark:placeholder:text-neutral-200 dark:focus:border-primary"
@@ -71,22 +83,24 @@
     <!--Navbar Selesai-->
 
     <!--Hero-->
-    <div class="flex p-10 h-full">
+    <div class="ml-8 flex p-10 h-full">
       <!--Quick Buy-->
-      <div class="bg-button w-full p-8 h-full rounded-xl">
-        <h2 class="text-center text-2xl text-buttontext">QUICK BUY</h2>
-        <h3 class="m-4 text-buttontext">1. PILIH KOTA</h3>
-        <select name="kota" id="" class="m-6 ml-6 w-5/6">
+      <div
+        class="bg-paragraph bg-opacity-20 border-headline2 border-4 -full p-8 h-full rounded-lg"
+      >
+        <h2 class="text-center text-2xl text-headline">QUICK BUY</h2>
+        <h3 class="m-4 text-headline">1. PILIH KOTA</h3>
+        <select name="kota" id="" class="m-3 ml-6 w-5/6">
           <option value="">Denpasar</option>
           <option value="">Jakarta</option>
         </select>
-        <h3 class="m-4 text-buttontext">2. PILIH BIOSKOP</h3>
-        <select name="bioskop" id="" class="m-4 ml-6 w-5/6">
+        <h3 class="m-4 text-headline">2. PILIH BIOSKOP</h3>
+        <select name="bioskop" id="" class="m-3 ml-6 w-5/6">
           <option value="">Lippo Mall Kuta</option>
           <option value="">Mall Bali Galeria</option>
           <option value="">SideWalk Jimbaran</option>
         </select>
-        <h3 class="m-4 text-buttontexth">3. PILIH TANGGAL+</h3>
+        <h3 class="m-4 text-headline">3. PILIH TANGGAL+</h3>
         <select name="tanggal" id="" class="m-3 ml-6 w-5/6">
           <option value="">1 Juni 23</option>
           <option value="">2 Juni 23</option>
@@ -94,9 +108,13 @@
         </select>
 
         <div
-          class="flex justify-center items-center relative bg-card w-full h-12"
+          class="flex justify-center items-center relative bg-button mt-8 w-40 mx-auto h-12 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:bg-bac duration-300"
         >
-          <button type="button" onclick="alert('maaf halaman belum selesai')">
+          <button
+            type="button"
+            class=" "
+            onclick="alert('maaf halaman belum selesai')"
+          >
             BELI TIKET
           </button>
         </div>
@@ -148,31 +166,141 @@
 
     <div class="mt-12" id="movies">
       <!--Movies-->
-      <div class="pt-10 text-headline">
-        <h1 class="text-6xl text-center mb-12">Movies</h1>
+
+      <div class="pt-10 text-buttontext bg-paragraph">
+        <h1 class="text-6xl text-center mb-12 bg-paragraph">Movies</h1>
+        <!-- <div>
+          <a href="firstmov.html">
+            <li class="ml-8 mr-20 mb-16 p-8 bg-background rounded-lg shadow-lg hover:scale-105 ">
+              <img src="../picture/1st movie.jpg" alt="" />
+              <h2 class="text-center text-xl mt-10 text-headline">
+                A MAN CALLED OTTO
+              </h2>
+              <br />
+              <hr style="border-color: #f9bc60" />
+            </li>
+          </a>
+        </div>
+
+        <div>
+          <a href="secondmov.html">
+            <li class="mr-20 mb-16 p-8 bg-background rounded-lg">
+              <img src="../picture/2nd movie.jpeg" alt="" />
+              <h2 class="text-center text-xl mt-10 text-headline">
+                SPIDERMAN NO WAY HOME
+              </h2>
+              <br />
+              <hr style="border-color: #f9bc60" />
+            </li>
+          </a>
+        </div>
+
+        <div>
+          <a href="thirdmov.html">
+            <li class="p-8 bg-background rounded-lg">
+              <img src="../picture/3rd movie.jpg" alt="" />
+              <h2 class="text-center text-xl mt-10 text-headline">
+                EVERYTHING EVERYWHERE
+                <br />
+                ALL AT ONCE
+                <hr style="border-color: #f9bc60" />
+              </h2>
+            </li>
+          </a>
+        </div>
+
+        <div>
+          <a href="fourthmov.html">
+            <li class="ml-8  mr-20 mb-16 p-8 bg-background rounded-lg">
+              <img src="../picture/4th movie.jpg" alt="" />
+              <h2 class="text-center text-xl mt-10 text-headline">
+                TOY STORY 3
+              </h2>
+              <br />
+              <hr style="border-color: #f9bc60" />
+            </li>
+          </a>
+        </div>
+
+        <div>
+          <a href="fifthmov.html">
+            <li class="mr-20 mb-16 p-8 bg-background rounded-lg">
+              <img src="../picture/5th movie.jpg" alt="" />
+              <h2 class="text-center text-xl mt-10 text-headline">
+                LOTR: THE FELLOWSHIP OF <br />THE RING
+              </h2>
+              <br />
+              <hr style="border-color: #f9bc60" />
+            </li>
+          </a>
+        </div>
+
+        <div>
+          <a href="sixthmov.html">
+            <li class="mb-16 p-8 bg-background rounded-lg">
+              <img src="../picture/6th movie.jpg" alt="" />
+              <h2 class="text-center text-xl mt-10 text-headline">
+                CEK TOKO SEBELAH
+              </h2>
+              <br />
+              <hr style="border-color: #f9bc60" />
+            </li>
+          </a>
+        </div>
+
+        <div>
+          <a href="seventhmov.html">
+            <li class="ml-28 mr-20 mb-16 p-8 bg-background rounded-lg">
+              <img src="../picture/7th movie.jpg" alt="" />
+              <h2 class="text-center text-xl mt-10 text-headline">
+                KKN DI DESA PENARI
+              </h2>
+              <br />
+            </li>
+          </a>
+        </div>
+
+        <div>
+          <a href="eigthmov.html">
+            <li class="mb-16 p-8 bg-background rounded-lg">
+              <img src="../picture/8th movie.jpg" alt="" />
+              <h2 class="text-center text-xl mt-10 text-headline">
+                MIRACLE IN CELL NO.7
+              </h2>
+              <br />
+            </li>
+          </a>
+        </div> -->
+
         <ul class="list-none flex p-10 flex-wrap">
           <a href="firstmov.html">
-            <li class="mr-16 mb-16">
+            <li
+              class="ml-8 mr-32 mb-16 p-8 bg-background rounded-lg shadow-lg hover:scale-105"
+            >
               <img src="../picture/1st movie.jpg" alt="" />
-              <h2 class="text-center text-xl mt-10">A MAN CALLED OTTO</h2>
+              <h2 class="text-center text-xl mt-10 text-headline">
+                A MAN CALLED OTTO
+              </h2>
               <br />
               <hr style="border-color: #f9bc60" />
             </li>
           </a>
 
           <a href="secondmov.html">
-            <li class="mr-16">
+            <li class="mr-32 mb-16 p-8 bg-background rounded-lg">
               <img src="../picture/2nd movie.jpeg" alt="" />
-              <h2 class="text-center text-xl mt-10">SPIDERMAN NO WAY HOME</h2>
+              <h2 class="text-center text-xl mt-10 text-headline">
+                SPIDERMAN NO WAY HOME
+              </h2>
               <br />
               <hr style="border-color: #f9bc60" />
             </li>
           </a>
 
           <a href="thirdmov.html">
-            <li class="mr-16">
+            <li class="p-8 bg-background rounded-lg">
               <img src="../picture/3rd movie.jpg" alt="" />
-              <h2 class="text-center text-xl mt-10">
+              <h2 class="text-center text-xl mt-10 text-headline">
                 EVERYTHING EVERYWHERE
                 <br />
                 ALL AT ONCE
@@ -182,47 +310,55 @@
           </a>
 
           <a href="fourthmov.html">
-            <li class="">
+            <li class="ml-8 mr-32 mb-16 p-8 bg-background rounded-lg">
               <img src="../picture/4th movie.jpg" alt="" />
-              <h2 class="text-center text-xl mt-10">TOY STORY 3</h2>
+              <h2 class="text-center text-xl mt-10 text-headline">
+                TOY STORY 3
+              </h2>
               <br />
               <hr style="border-color: #f9bc60" />
             </li>
           </a>
 
           <a href="fifthmov.html">
-            <li class="mr-16 mb-16">
+            <li class="mr-32 mb-16 p-8 bg-background rounded-lg">
               <img src="../picture/5th movie.jpg" alt="" />
-              <h2 class="text-center text-xl mt-10">LORD OF THE RINGS</h2>
+              <h2 class="text-center text-xl mt-10 text-headline">
+                LOTR: THE FELLOWSHIP OF <br />THE RING
+              </h2>
               <br />
               <hr style="border-color: #f9bc60" />
             </li>
           </a>
 
           <a href="sixthmov.html">
-            <li class="mr-16">
+            <li class="mb-16 p-8 bg-background rounded-lg">
               <img src="../picture/6th movie.jpg" alt="" />
-              <h2 class="text-center text-xl mt-10">CEK TOKO SEBELAH</h2>
+              <h2 class="text-center text-xl mt-10 text-headline">
+                CEK TOKO SEBELAH
+              </h2>
               <br />
               <hr style="border-color: #f9bc60" />
             </li>
           </a>
 
           <a href="seventhmov.html">
-            <li class="mr-16">
+            <li class="ml-72 mr-20 mb-16 p-8 bg-background rounded-lg">
               <img src="../picture/7th movie.jpg" alt="" />
-              <h2 class="text-center text-xl mt-10">KKN DI DESA PENARI</h2>
+              <h2 class="text-center text-xl mt-10 text-headline">
+                KKN DI DESA PENARI
+              </h2>
               <br />
-              <hr style="border-color: #f9bc60" />
             </li>
           </a>
 
           <a href="eigthmov.html">
-            <li class="ml-1">
+            <li class="mb-16 p-8 bg-background rounded-lg">
               <img src="../picture/8th movie.jpg" alt="" />
-              <h2 class="text-center text-xl mt-10">MIRACLE in CELL NO.7</h2>
+              <h2 class="text-center text-xl mt-10 text-headline">
+                MIRACLE IN CELL NO.7
+              </h2>
               <br />
-              <hr style="border-color: #f9bc60" />
             </li>
           </a>
         </ul>
@@ -393,12 +529,11 @@
     </div>
 
     <!--Content Selesai-->
-    <div class="arrow">
+    <div class="arrow hover:animate-bounce ease-in-out duration-200">
       <a href="#"><i class="bx bxs-chevrons-up"></i></a>
     </div>
     <!--Footer-->
     <div class="bg-paragraph">
-      
       <ul class="list-none flex justify-center p-10">
         <li class="ml-8 mr-8">
           <a href="about.html" target="_blank"
@@ -413,12 +548,10 @@
         <li class="ml-8 mr-8">
           <a href="about.html" target="_blank"><h2>Feature</h2></a>
         </li>
-        <li>
-          
-        </li>
+        <li></li>
       </ul>
     </div>
-    
+
     <!--Footer Selesai-->
     <script src="./input.js"></script>
   </body>
